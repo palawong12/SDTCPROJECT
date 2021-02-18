@@ -1,0 +1,63 @@
+{% extends 'hellomobileapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+	#user_pic{
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border:5px solid #888;
+		margin:0 auto;
+		object-fit: cover;
+	}
+
+	#user-info-box{
+		text-align: center;
+	}
+</style>
+
+<div class="main-container">
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card card-body" id="user-info-box">
+				<img id="user_pic" src="{{profile.profile_pic.url}}">
+				<br>
+				<h2>{{profile}}</h2>
+				<p>Email: {{profile.email}}</p>
+				<hr>
+				<p>{{profile.bio}}</p>
+				<hr>
+				<a class="btn btn-info btn-block" href="{% url 'update_profile' %}">Edit Profile</a>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="card card-body">
+				<h3>My Posts:</h3>
+				<hr>
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th>Post ID</th>
+							<th>Name</th>
+							<th>Date</th>
+							<th>S</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>11-24-2020</td>
+						<td>FIX IT HERE</td>
+						<td>SS</td>
+						<td><a class="btn btn-dark btn-sm" href="">View Post</a></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

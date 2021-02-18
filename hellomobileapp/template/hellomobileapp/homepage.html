@@ -1,0 +1,103 @@
+{% extends 'hellomobileapp/base.html' %}
+{% load static %}
+{% block content %}
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header class="bg-image-full" style="background-image: url({% static 'img/banner.jpg' %});">
+    <img class="img-fluid d-block mx-auto" src="{% static 'img/empty.png' %}" alt="">
+  </header>
+  
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>วิทยาลัยเทคโนโลยีสยามธุรกิจ ในพระอุปถัมฯ</h1>
+      <div ui-view="" class="container-fluid ng-scope" style="padding: 3px"><!-- uiView: --><ui-view name="content" class="ng-scope">
+    <div slide-directive=""><div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5" class="deactive"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6" class="deactive"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7" class="deactive"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8" class="deactive"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9" class="deactive"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="10" class="deactive"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+                <img class="d-block w-100" src="{% static 'img/sdtc1.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc2.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc3.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc4.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc1.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc2.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc3.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc4.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item active">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc1.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc2.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc3.jpg' %}">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a ui-sref="home.admission.apply" href="#/admission/apply">
+              <img class="d-block w-100" src="{% static 'img/sdtc4.jpg' %}">
+            </a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div></div>
+ 
+  </section>
+
+{% endblock content %}
